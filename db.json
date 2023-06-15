@@ -1,0 +1,44 @@
+{
+  "news": [
+    {
+      "id": "08973610-d8b2-4b91-ae70-898f245a6268",
+      "title": "Kamoliddin",
+      "description": "Bakhtiyorov",
+      "category": "sport"
+    },
+    {
+      "id": "123fbe61-a78c-4246-a063-807ca6cfa1a3",
+      "title": "Senior",
+      "description": "Programmer",
+      "category": "world"
+    },
+    {
+      "id": "e8f16f37-24f5-4148-bf8a-3dc05ecadbd3",
+      "title": "IELTS",
+      "description": "Bandscore 9.0",
+      "category": "weather"
+    }
+  ],
+  "filters": [
+    {
+      "name": "sport",
+      "className": "blue",
+      "label": "SPORT NEWS"
+    },
+    {
+      "name": "all",
+      "className": "red",
+      "label": "ALL"
+    },
+    {
+      "name": "weather",
+      "className": "gold",
+      "label": "WEATHER NEWS"
+    },
+    {
+      "name": "world",
+      "className": "green",
+      "label": "WORLD NEWS"
+    }
+  ]
+}

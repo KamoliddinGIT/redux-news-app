@@ -1,0 +1,485 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+$font_size: 30px;
+$font_style: Helvetica, sans-serif;
+$font_color: red;
+$font_size_2: 30px;
+$font_style_2: Helvetica, serif;
+$font_color_2: green;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    width: 100%;
+    height: 100%;
+}
+
+.news {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h1 {
+        font-size: $font_size;
+        font-family: $font_style;
+        color: $font_color;
+    }
+    h2 {
+        font-size: $font_size_2;
+        font-family: $font_style_2;
+        color: $font_color_2;
+    }
+}
+
+// Spinner //
+
+.page_404 {
+    padding: 40px 0;
+    background: #fff;
+    font-family: "Arvo", serif;
+  }
+  
+  .page_404 img {
+    width: 100%;
+  }
+  
+  .four_zero_four_bg {
+    background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
+    height: 400px;
+    background-position: center;
+  }
+  
+  .four_zero_four_bg h1 {
+    font-size: 80px;
+  }
+  
+  .four_zero_four_bg h3 {
+    font-size: 80px;
+  }
+  
+  .link_404 {
+    color: #fff !important;
+    padding: 10px 20px;
+    background: #39ac31;
+    margin: 20px 0;
+    display: inline-block;
+  }
+  .contant_box_404 {
+    margin-top: -50px;
+  }  
+
+.close {
+  position: absolute;
+  right: 8px;
+  font-size: 18px;
+  top: 1px; 
+}
+
+.close:hover {
+  cursor: pointer;
+}
+
+.main_news {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  position: relative;
+  margin-top: 30px;
+}
+
+.twice {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: 60vh;
+}
+
+.once {
+  width: 1100px;
+}
+
+.add {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 300px;
+  position: fixed;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  top: 200px;
+  right: 150px;
+  margin-bottom: -200px;
+}
+
+// ---------------------------inputs-------------------------------- //
+
+.title{
+  width: 250px;
+  padding: 10px;
+  border-radius: 30px;
+  border: 1px solid #bbb;
+}
+
+.desc {
+  width: 250px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #bbb;
+}
+
+.title, .desc, .select:focus {
+  outline: none;
+}
+
+.select {
+  width: 150px;
+  padding: 5px;
+  border-radius: 20px;
+}
+
+.total {
+  z-index: 99999;
+}
+
+#btn {
+  background-color: #0d6efd;
+  color: #fff;
+  padding: 3px 5px;
+  border: none;
+  border-radius: 5px;
+}
+
+#spinner {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.categories {
+  width: 100px; 
+  display: flex;
+  height: 50px;
+  margin-top: 40px;
+}
+
+.categories button {
+  width: 100px;
+  margin-left: 20px;
+  height: 60px;
+} 
+
+// colors //
+
+.blue {
+  background-color: #0dcaf0;
+}
+
+.green {
+  background-color: #198754;
+}
+
+.gold {
+  background-color: #ffc107;  
+}
+.red {
+  background-color: red;
+}
+
+#box {
+  margin-top: 20px;
+  position: relative;
+  width: 500px;
+  padding: 20px;
+}
+
+.card-title {
+  margin-bottom: 10px;
+}
+
+.card-body {
+  color: #fff;
+}
+
+// footer //
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);
+
+* {
+  font-family: Roboto;
+}
+
+.footer-distributed {
+  background: #444;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  font: bold 16px sans-serif;
+  text-align: left;
+  padding: 50px 60px 40px;
+  overflow: hidden;
+}
+
+section {
+  width: 100%;
+  display: inline-block;
+  background: #ccc;
+  height: 60vh;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+/* Footer left */
+
+.footer-distributed .footer-left {
+  float: left;
+}
+
+/* The company logo */
+
+.footer-distributed h3 {
+  color: #ffffff;
+  font: normal 36px "Roboto", cursive;
+  margin: 0 0 10px;
+}
+
+.footer-distributed h3 span {
+  color: #5383d3;
+}
+
+/* Footer links */
+
+.footer-distributed .footer-links {
+  color: #ffffff;
+  margin: 0 0 10px;
+  padding: 0;
+}
+
+.footer-distributed .footer-links a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-distributed .footer-company-name {
+  color: #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Footer social icons */
+
+.footer-distributed .footer-icons {
+  margin-top: 40px;
+}
+
+.footer-distributed .footer-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+/* Footer Right */
+
+.footer-distributed .footer-right {
+  float: right;
+}
+
+.footer-distributed .footer-right p {
+  display: inline-block;
+  vertical-align: top;
+  margin: 15px 42px 0 0;
+  color: #ffffff;
+}
+
+/* The contact form */
+
+.footer-distributed form {
+  display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea {
+  display: block;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: #1f2022;
+  box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+  border: none;
+  resize: none;
+
+  font: inherit;
+  font-size: 14px;
+  font-weight: normal;
+  color: #d1d2d2;
+
+  width: 400px;
+  padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+  color: #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+  color: #5c666b;
+  opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder {
+  color: #5c666b;
+}
+
+.footer-distributed form input {
+  height: 55px;
+  margin-bottom: 15px;
+}
+
+.footer-distributed form textarea {
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+.footer-distributed form button {
+  border-radius: 3px;
+  background-color: #33383b;
+  color: #ffffff;
+  border: 0;
+  padding: 15px 50px;
+  font-weight: bold;
+  float: right;
+}
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 1000px) {
+  .footer-distributed {
+    font: bold 14px sans-serif;
+  }
+
+  .footer-distributed .footer-company-name {
+    font-size: 12px;
+  }
+
+  .footer-distributed form input,
+  .footer-distributed form textarea {
+    width: 250px;
+  }
+
+  .footer-distributed form button {
+    padding: 10px 35px;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer-distributed {
+    padding: 30px;
+  }
+
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-right {
+    float: none;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .footer-distributed .footer-left {
+    margin-bottom: 40px;
+  }
+
+  .footer-distributed form {
+    margin-top: 30px;
+  }
+
+  .footer-distributed form {
+    display: block;
+  }
+
+  .footer-distributed form button {
+    float: none;
+  }
+}
+
+.msc-blank  {
+  text-align: center;
+  &-icon {
+    color: gray;
+    font-size: 4rem;
+  }
+  &-title { 
+    font-size: 1.6rem;
+  }
+  &-desc {
+    font-size: 1rem;
+    color: gray;
+  }
+}
+
+.remove-btn {
+  margin-right: 0.5rem;
+}
+
+.item-enter {
+  opacity: 0;
+}
+.item-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.item-exit {
+  opacity: 1;
+}
+.item-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+
+.alert-enter {
+  opacity: 0;
+  transform: scale(0.9);
+}
+.alert-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 800ms, transform 300ms;
+}
+.alert-exit {
+  opacity: 1;
+}
+.alert-exit-active {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 300ms, transform 300ms;
+}
+

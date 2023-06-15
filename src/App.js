@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./main.scss";
+import News from "./Components/News";
+import Navbar from "./Components/Navbar";
+import AddForm from "./Components/AddForm";
+import Footer from "./Components/Footer";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
+import NewsFilter from "./Components/NewsFilter";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <div className="twice">
+        <div className="once">
+          <News />
+        </div>
+        <NewsFilter />
+        <AddForm />
+        <ToastContainer />
+      </div>
+      <Footer />
     </div>
   );
 }
